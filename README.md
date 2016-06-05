@@ -14,7 +14,7 @@ Flash e проект със свободен код, който пресъзда
 ![Arduino Duemilanove](https://www.arduino.cc/en/uploads/Main/ArduinoDuemilanove.jpg)
 
 ## Демонстрация
-![Flash Demo](http://i.imgur.com/fdZzchQ.gif)
+[![Flash Demo](http://i.imgur.com/sD2R9g3.png)](/Demo/flash-demo.mp4)
 
 ## Flash Team
 * [@rgg1992](https://github.com/rgg1992) - Project Manager
