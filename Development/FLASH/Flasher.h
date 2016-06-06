@@ -21,7 +21,7 @@ class Flasher{
   unsigned long previousMillis;   // will store last time LED was updated
 	
   public:
-    //Constructor
+  //Constructor
 	Flasher(int pin, long on, long off);
 	/**
     * The function starts the flashing of the LED.

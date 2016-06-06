@@ -25,8 +25,8 @@ bool isInEmergencyMode = false;
 bool isInAutoLightMode = false;
 
 //Used for blinking effect of the LEDs
-Flasher leftTurnSignal(LEFT_TURN_SIGNAL_PIN, TURN_LIGHT_FLASH_DURATION, TURN_LIGHT_FLASH_DURATION);
 Flasher rightTurnSignal(RIGHT_TURN_SIGNAL_PIN, TURN_LIGHT_FLASH_DURATION, TURN_LIGHT_FLASH_DURATION);
+Flasher leftTurnSignal(LEFT_TURN_SIGNAL_PIN, TURN_LIGHT_FLASH_DURATION, TURN_LIGHT_FLASH_DURATION);
 
 /**
  * The setup function where the input and output pins are initialized.
@@ -113,12 +113,12 @@ void headLights(){
  */
 void turnLights(){
   if(!isInEmergencyMode){
-    if(digitalRead(RIGHT_TURN_LIGHTS_BTN_PIN)== HIGH){
+    if(digitalRead(LEFT_TURN_LIGHTS_BTN_PIN)== HIGH){
       leftTurnSignal.startFlashing();
     }else{
       leftTurnSignal.stopFlashing();
     }
-    if(digitalRead(LEFT_TURN_LIGHTS_BTN_PIN) == HIGH){
+    if(digitalRead(RIGHT_TURN_LIGHTS_BTN_PIN) == HIGH){
       rightTurnSignal.startFlashing();
     }else{
       rightTurnSignal.stopFlashing();
